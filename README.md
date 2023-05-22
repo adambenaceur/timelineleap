@@ -1,7 +1,7 @@
 
 ## timelineleap
 
-e-commerce made from Shopify ✨
+e-commerce made with Shopify ✨
 
 https://timelineleap.com/
 
