@@ -1,5 +1,9 @@
-export default function NavBar() {
+const NavBar = () => {
   return (
-    <div>Timelineleap</div>
+    <div className="fixed w-full bg-white z-10 shadow-sm">
+        Timelineleap
+    </div>
   )
 }
+
+export default NavBar
