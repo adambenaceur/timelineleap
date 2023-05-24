@@ -29,8 +29,56 @@ body,
   
 }
 
+
+
+/* container.tsx */
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem/* 16px */;
+  padding-right: 1rem/* 16px */;
+  
+}
+
+@media (min-width: 1280px) {
+  .container {
+      padding-left: 5rem/* 80px */;
+      padding-right: 5rem/* 80px */;
+  }
+}
+
 @media (min-width: 768px) {
-  .md\:gap-0 {
+  .container {
+    padding-left: 2.5rem/* 40px */;
+    padding-right: 2.5rem/* 40px */;
+    gap: 0px;
+}
+}
+
+@media (min-width: 640px) {
+  .container {
+      padding-left: 0.5rem/* 8px */;
+      padding-right: 0.5rem/* 8px */;
+  }
+}
+
+.container-logo {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem/* 16px */;
+  padding-right: 1rem/* 16px */;
+}
+
+@media (min-width: 768px) {
+  .container-logo {
       gap: 0px;
   }
+}
+
+.react-icons { 
+  padding-left: 1rem/* 16px */;
+  padding-right: 1rem/* 16px */;
 }
