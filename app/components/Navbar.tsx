@@ -1,9 +1,18 @@
-const NavBar = () => {
+"use client"
+
+import Container from "./container"
+
+const Navbar = () => {
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm">
-        Timelineleap
+    <div className="navbar">
+      <div className="navbar-container">
+        <Container>
+
+        </Container>
+      </div>
+      
     </div>
   )
 }
 
-export default NavBar
+export default Navbar
