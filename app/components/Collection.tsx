@@ -17,13 +17,10 @@ const Collection = () => {
       <h2 className="collection-title">Collection</h2>
       <div className="collection-grid">
         {items.map(item => (
-          <div key={item.id} className="item-card">
+          <button key={item.id} className="item-card" onClick={() => router.push(`/collection/${item.id}`)}>
             <img src={item.image} alt={item.name} className="item-image" />
             <h3 className="item-name">{item.name}</h3>
-            <button className="item-button" onClick={() => router.push(`/collection/${item.id}`)}>
-              View More
-            </button>
-          </div>
+          </button>
         ))}
       </div>
     </div>
