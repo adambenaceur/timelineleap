@@ -71,6 +71,11 @@ body,
 
 }
 
+.react-icons svg:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 @media (min-width: 1280px) {
   .container {
       padding-left: 5rem;
