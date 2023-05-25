@@ -1,13 +1,17 @@
+/* Tailwind CSS */
+
+/* Base styles */
 @tailwind base;
+
+/* Components styles */
 @tailwind components;
+
+/* Utility styles */
 @tailwind utilities;
 
-html,
-body,
-:root {
-  height: 100%
-}
+/* Custom styles */
 
+/* Navbar */
 .navbar {
   position: fixed;
   width: 100%;
@@ -25,6 +29,7 @@ body,
   border-width: 1px;
 }
 
+/* Container */
 .container {
   max-width: 90%;
   margin-left: auto;
@@ -52,6 +57,7 @@ body,
   font-weight: 300;
 }
 
+/* Navigation */
 .nav-items {
   display: flex;
   list-style: none;
@@ -63,12 +69,13 @@ body,
   margin-left: 10px;
 }
 
-.react-icons, svg { 
+/* React Icons */
+.react-icons,
+svg { 
   display: flex;
   align-items: center;
   margin-right: 10px ;
   margin-left: 10px;
-
 }
 
 .react-icons svg:hover {
@@ -76,6 +83,7 @@ body,
   transition: transform 0.3s ease-in-out;
 }
 
+/* Media queries for container padding */
 @media (min-width: 1280px) {
   .container {
       padding-left: 5rem;
@@ -102,6 +110,7 @@ body,
   cursor: pointer;
 }
 
+/* Navigation items and active link styles */
 .nav-item a:hover,
 .nav-item a.active {
   position: relative;
@@ -118,7 +127,7 @@ body,
   background-color: #000;
 }
 
-/* styles for the active class */
+/* Active class styles */
 .active {
   position: relative;
 }
@@ -133,6 +142,7 @@ body,
   background-color: #000;
 }
 
+/* Banner */
 .banner {
   position: relative;
   max-width: 90%;
@@ -170,6 +180,7 @@ body,
   background-color: #444;
 }
 
+/* Collection */
 .collection {
   max-width: 90%;
   margin: auto;
@@ -188,7 +199,6 @@ body,
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-
 
 .product-card {
   border: 1px solid #ddd;
@@ -212,28 +222,32 @@ body,
   color: #888;
 }
 
-/* Media queries */
+/* Media queries for banner and collection padding */
 @media (min-width: 1280px) {
-  .banner, .collection {
-      padding-left: 5rem;
-      padding-right: 5rem;
+  .banner,
+  .collection {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
 @media (min-width: 768px) {
-  .banner, .collection {
+  .banner,
+  .collection {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 }
 
 @media (min-width: 640px) {
-  .banner, .collection {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+  .banner,
+  .collection {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
+/* Item Card */
 .item-card {
   border: 1px solid #ddd;
   padding: 20px;
@@ -253,7 +267,6 @@ body,
   font-weight: bold;
 }
 
-
 .item-button {
   position: absolute;
   bottom: -25%;
@@ -269,5 +282,82 @@ body,
 
 .item-button:hover {
   background-color: #444;
+}
+
+/* Media queries for item grid */
+@media (max-width: 767px) {
+  .collection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .item-card {
+    margin-bottom: 20px;
+  }
+
+  .item-button {
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .collection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .item-card {
+    margin-bottom: 20px;
+  }
+
+  .item-button {
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  .collection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .item-card {
+    margin-bottom: 20px;
+  }
+
+  .item-button {
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .collection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .item-card {
+    margin-bottom: 20px;
+  }
+
+  .item-button {
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .collection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .item-card {
+    margin-bottom: 0;
+  }
 }
 

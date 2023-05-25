@@ -9,7 +9,7 @@ const Collection = () => {
     { id: 1, name: 'Journals', image: 'journals.jpg' },
     { id: 2, name: 'Watches', image: 'watches.jpg' },
     { id: 3, name: 'Calendars', image: 'calendars.jpg' },
-    { id: 4, name: 'Pens', image: 'pens.jpg' },
+    { id: 4, name: 'Writing', image: 'writing.jpg' },
   ];
 
   return (
