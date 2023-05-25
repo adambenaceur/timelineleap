@@ -1,5 +1,6 @@
 
 import Banner from './components/Banner'
+import Collection from './components/Collection'
 import Navbar from './components/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={nunito.className}>
         <Navbar/>
         <Banner/>
+        <Collection/>
         {children}
       </body>
     </html>
