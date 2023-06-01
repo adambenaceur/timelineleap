@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 ## timelineleap
 
 e-commerce platform ✨
